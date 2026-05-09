@@ -218,16 +218,16 @@ ul, ol   { list-style: none; }
   align-items: center;
   justify-content: center;
   padding: 0.4375rem 0.5rem;
-  color: var(--color-purple);
-  border: 1px solid var(--color-purple);
+  color: var(--color-purple-mid);
+  border: 1px solid var(--color-rule);
   border-radius: 3px;
   line-height: 0;
-  transition: background 0.15s, color 0.15s;
+  transition: color 0.15s, border-color 0.15s;
   flex-shrink: 0;
 }
 .header__linkedin:hover {
-  background: var(--color-purple);
-  color: #fff;
+  color: var(--color-purple);
+  border-color: var(--color-purple);
 }
 
 /* Override drawer generic-a rule for the LinkedIn icon */
