@@ -11,7 +11,11 @@ export default function SelectedWork({ content }) {
           {content.items.map(item => (
             <article key={item.title} className="work-entry">
               <span className="work-entry__category">{item.category}</span>
-              <h3 className="work-entry__title">{item.title}</h3>
+              <h3 className="work-entry__title">
+                {item.url ? (
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
+                ) : item.title}
+              </h3>
               <p className="work-entry__body">{item.body}</p>
               {item.whatItShows && (
                 <div className="work-entry__shows">

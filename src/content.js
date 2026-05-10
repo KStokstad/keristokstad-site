@@ -105,12 +105,14 @@ export const siteContent = {
       {
         category: 'Practice & Writing',
         title: 'Civic Congruence',
+        url: 'https://www.civiccongruence.org',
         body: 'A civic infrastructure project exploring how communities, networks, and institutions can surface better signal without adding more noise.',
         whatItShows: 'Civic systems thinking, institutional trust, feedback loops, and public-facing infrastructure.',
       },
       {
         category: 'Writing & Research',
         title: 'Bad Boards',
+        url: 'https://www.BadBoards.org',
         body: 'A practical field guide on board dysfunction, governance patterns, and the language leaders need when the room gets difficult.',
         whatItShows: 'Governance pattern recognition, executive judgment, and practical language for high-pressure leadership moments.',
       },
