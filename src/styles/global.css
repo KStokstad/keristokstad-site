@@ -405,7 +405,7 @@ ul, ol   { list-style: none; }
     top: 0;
     width: 80%;
     height: 100%;
-    opacity: 0.15;
+    opacity: 0.22;
   }
   .hero__content { max-width: none; padding-block: clamp(56px, 10vw, 80px); }
   .hero__inner   { min-height: auto; }
