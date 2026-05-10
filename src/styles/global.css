@@ -400,9 +400,15 @@ ul, ol   { list-style: none; }
 }
 
 @media (max-width: 900px) {
-  .hero__image-wrap { display: none; }
-  .hero__content    { max-width: none; padding-block: clamp(56px, 10vw, 80px); }
-  .hero__inner      { min-height: auto; }
+  .hero__image-wrap {
+    right: -5%;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    opacity: 0.15;
+  }
+  .hero__content { max-width: none; padding-block: clamp(56px, 10vw, 80px); }
+  .hero__inner   { min-height: auto; }
 }
 
 /* ============================================================
