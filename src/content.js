@@ -54,25 +54,25 @@ export const siteContent = {
     items: [
       {
         situation: 'When the strategy exists, but execution is scattered.',
-        response: 'I help translate priorities into decisions, roles, timelines, and practical next steps.',
+        response: 'I translate priorities into decisions, roles, timelines, and practical next steps.',
       },
       {
         situation: 'When governance is consuming too much leadership energy.',
-        response: 'I help clarify board roles, committee structures, oversight routines, and healthier ways of working.',
+        response: 'I clarify board roles, committee structures, oversight routines, and healthier ways of working.',
       },
       {
         situation: 'When the operating model has not caught up to the work.',
-        response: 'I help identify the structures, handoffs, meetings, and workflows needed to reduce friction.',
+        response: 'I help adjust structures, handoffs, meetings, and workflows so the work can move with less friction.',
       },
       {
         situation: 'When a transition needs trust, communication, and momentum.',
-        response: 'I help leaders guide change with clearer decisions, stakeholder engagement, and steady implementation.',
+        response: 'I support leaders with clearer decisions, steadier stakeholder engagement, and practical implementation.',
       },
     ],
   },
 
   positioningBand: {
-    statement: 'When strategy gets stuck between people, systems, and decisions, the work needs more than a plan. It needs structure.',
+    statement: 'Most stalled work is not stuck because people do not care. It is stuck because the structure is not holding.',
   },
 
   practiceAreas: {
