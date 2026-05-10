@@ -72,7 +72,7 @@ export const siteContent = {
   },
 
   positioningBand: {
-    statement: 'Most stalled work is not stuck because people do not care. It is stuck because the structure is not holding.',
+    statement: 'Stalled work is often a structure problem before it is a strategy problem.',
   },
 
   practiceAreas: {
@@ -100,7 +100,7 @@ export const siteContent = {
 
   selectedWork: {
     label: 'Public Work',
-    headline: 'Public work and practical thinking.',
+    headline: 'Public work. Practical tools. Clearer systems.',
     items: [
       {
         category: 'Practice & Writing',
