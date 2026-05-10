@@ -400,9 +400,27 @@ ul, ol   { list-style: none; }
 }
 
 @media (max-width: 900px) {
-  .hero__image-wrap { display: none; }
-  .hero__content    { max-width: none; padding-block: clamp(56px, 10vw, 80px); }
-  .hero__inner      { min-height: auto; }
+  .hero__inner {
+    min-height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero__image-wrap {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    height: 240px;
+    margin-top: clamp(40px, 8vw, 64px);
+    flex-shrink: 0;
+  }
+  .hero__image {
+    object-position: center top;
+  }
+  .hero__content {
+    max-width: none;
+    padding-block: clamp(32px, 6vw, 56px);
+  }
 }
 
 /* ============================================================

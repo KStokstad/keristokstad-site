@@ -1,15 +1,15 @@
 export default function Hero({ content }) {
   return (
     <section className="hero" id="top">
-      <div className="hero__image-wrap" aria-hidden="true">
-        <img
-          src="/images/keri-hero-line-art.png"
-          alt=""
-          className="hero__image"
-        />
-      </div>
       <div className="container">
         <div className="hero__inner">
+          <div className="hero__image-wrap" aria-hidden="true">
+            <img
+              src="/images/keri-hero-line-art.png"
+              alt=""
+              className="hero__image"
+            />
+          </div>
           <div className="hero__content">
             <div className="hero__eyebrow-wrap">
               <span className="hero__eyebrow-rule" aria-hidden="true" />
