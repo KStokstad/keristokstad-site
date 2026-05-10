@@ -708,6 +708,11 @@ ul, ol   { list-style: none; }
   margin-bottom: 1.125rem;
   letter-spacing: -0.015em;
 }
+.work-entry__title a {
+  color: inherit;
+  transition: color 0.15s;
+}
+.work-entry__title a:hover { color: var(--color-purple); }
 
 .work-entry__body {
   font-size: 1.0625rem;
