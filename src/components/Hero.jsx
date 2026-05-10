@@ -3,7 +3,7 @@ export default function Hero({ content }) {
     <section className="hero" id="top">
       <div className="hero__image-wrap" aria-hidden="true">
         <img
-          src="/images/keri-line-hero.svg"
+          src="/images/keri-line-hero-v2.png"
           alt=""
           className="hero__image"
         />
