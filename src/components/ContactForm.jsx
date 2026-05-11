@@ -40,21 +40,21 @@ export default function ContactForm() {
     setServerError('')
 
     try {
-      const res = await fetch('/api/contact', {
+      const res = await fetch('https://formspree.io/f/xeenpyje', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           name: fields.name.trim().slice(0, LIMITS.name),
           email: fields.email.trim().slice(0, LIMITS.email),
           organization: fields.organization.trim().slice(0, LIMITS.organization),
           message: fields.message.trim().slice(0, LIMITS.message),
-          _hp: honeypotRef.current?.value ?? '',
+          source_site: 'keristokstad.com',
         }),
       })
 
       const data = await res.json()
 
-      if (res.ok && data.ok) {
+      if (res.ok) {
         setStatus('success')
         setFields(EMPTY)
       } else {
@@ -78,7 +78,15 @@ export default function ContactForm() {
   const sending = status === 'sending'
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit} noValidate>
+    <form
+      className="contact-form"
+      method="POST"
+      action="https://formspree.io/f/xeenpyje"
+      onSubmit={handleSubmit}
+      noValidate
+    >
+      <input type="hidden" name="source_site" value="keristokstad.com" />
+
       {/* Honeypot — hidden from users and assistive technology */}
       <div className="contact-form__honeypot" aria-hidden="true">
         <label htmlFor="cf-hp">Leave this blank</label>
