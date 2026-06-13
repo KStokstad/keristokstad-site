@@ -121,6 +121,7 @@ export const siteContent = {
         title: 'Community Media Voices',
         url: 'http://communitymediavoices.org',
         body: 'A civic media archive preserving the people, stations, stories, and relationships that shaped community media across the United States.',
+        whatItShows: 'Sector fluency, historical stewardship, relationship mapping, and the ability to make institutional memory visible and useful.',
       },
       {
         category: 'Advisory Work',
