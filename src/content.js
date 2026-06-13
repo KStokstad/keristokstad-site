@@ -103,7 +103,7 @@ export const siteContent = {
     headline: 'Public work. Practical tools. Clearer systems.',
     items: [
       {
-        category: 'Practice & Writing',
+        category: 'Civic Practice & Systems',
         title: 'Civic Congruence',
         url: 'https://www.civiccongruence.org',
         body: 'A civic infrastructure project exploring how communities, networks, and institutions can surface better signal without adding more noise.',
