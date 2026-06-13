@@ -49,6 +49,7 @@ export default function ContactForm() {
           organization: fields.organization.trim().slice(0, LIMITS.organization),
           message: fields.message.trim().slice(0, LIMITS.message),
           source_site: 'keristokstad.com',
+          _subject: 'New inquiry — keristokstad.com',
         }),
       })
 
@@ -86,6 +87,7 @@ export default function ContactForm() {
       noValidate
     >
       <input type="hidden" name="source_site" value="keristokstad.com" />
+      <input type="hidden" name="_subject" value="New inquiry — keristokstad.com" />
 
       {/* Honeypot — hidden from users and assistive technology */}
       <div className="contact-form__honeypot" aria-hidden="true">
