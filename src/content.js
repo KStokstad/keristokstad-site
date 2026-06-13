@@ -117,6 +117,12 @@ export const siteContent = {
         whatItShows: 'Governance pattern recognition, executive judgment, and practical language for high-pressure leadership moments.',
       },
       {
+        category: 'Civic Media & Field-Building',
+        title: 'Community Media Voices',
+        url: 'http://communitymediavoices.org',
+        body: 'A civic media archive preserving the people, stations, stories, and relationships that shaped community media across the United States.',
+      },
+      {
         category: 'Advisory Work',
         title: 'Advisory Engagements',
         body: 'Strategic planning, operating model design, governance support, facilitation, stakeholder engagement, project leadership, and implementation advisory for organizations navigating complexity.',
