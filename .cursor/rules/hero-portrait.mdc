@@ -1,0 +1,33 @@
+---
+description: Locked hero portrait — do not reposition without explicit user request
+globs:
+  - src/components/Hero.jsx
+  - src/hero-portrait.lock.js
+  - src/styles/global.css
+alwaysApply: true
+---
+
+# Hero portrait layout is LOCKED
+
+Do **not** modify hero portrait positioning, alignment math, spacing between the two hero body paragraphs, or swap the hero artwork unless the user **explicitly** asks to reposition the illustration.
+
+## Locked source of truth
+
+All tuned numbers live in `src/hero-portrait.lock.js`. CSS hero portrait variables in `global.css` must stay in sync with that file.
+
+## How it works (do not redesign)
+
+1. `Hero.jsx` aligns the PNG waist line to `.hero__line-gap` (between “I work with mission…” and “Former CEO…”).
+2. Horizontal offset uses `wrapLeft`, `translateX`, and optional headline clearance nudge (capped).
+3. Asset: `keri-hero-line-art.png` — line is part of the artwork, not a separate SVG.
+
+## Do not
+
+- Replace with grid/flex column layouts for the portrait
+- Add separate SVG decorative lines
+- Tune with guessed `rem` / `vh` offsets instead of the gap anchor
+- Change `scale`, `translateX`, or `wrapLeft` while “trying” vertical fixes
+
+## If the user asks to move the portrait
+
+Edit **only** `src/hero-portrait.lock.js` (and matching CSS vars if present), then verify desktop + mobile.
