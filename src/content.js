@@ -124,6 +124,13 @@ export const siteContent = {
         whatItShows: 'Sector fluency, historical stewardship, relationship mapping, and the ability to make institutional memory visible and useful.',
       },
       {
+        category: 'Public Tools & Systems',
+        title: 'Orrery Map',
+        url: 'https://orrerymap.com',
+        body: 'An embeddable 3D relationship map for archives, organizations, and living histories — turning connected data into an interactive map people can explore.',
+        whatItShows: 'Product design, relationship mapping, archival UX, and the ability to make complex institutional networks visible and navigable.',
+      },
+      {
         category: 'Advisory Work',
         title: 'Advisory Engagements',
         body: 'Strategic planning, operating model design, governance support, facilitation, stakeholder engagement, project leadership, and implementation advisory for organizations navigating complexity.',
