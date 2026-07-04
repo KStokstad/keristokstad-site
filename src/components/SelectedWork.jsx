@@ -1,3 +1,27 @@
+function renderBodyPart(part, key) {
+  if (part.href) {
+    return (
+      <a key={key} href={part.href} target="_blank" rel="noopener noreferrer">
+        {part.text}
+      </a>
+    )
+  }
+
+  return part.text
+}
+
+function renderBodyParagraph(paragraph, index) {
+  if (typeof paragraph === 'string') {
+    return <p key={index} className="work-entry__body">{paragraph}</p>
+  }
+
+  return (
+    <p key={index} className="work-entry__body">
+      {paragraph.map((part, partIndex) => renderBodyPart(part, partIndex))}
+    </p>
+  )
+}
+
 export default function SelectedWork({ content }) {
   return (
     <section className="selected-work" id="work">
@@ -16,7 +40,9 @@ export default function SelectedWork({ content }) {
                   <a href={item.url} target="_blank" rel="noopener noreferrer">{item.title}</a>
                 ) : item.title}
               </h3>
-              <p className="work-entry__body">{item.body}</p>
+              {Array.isArray(item.body)
+                ? item.body.map((paragraph, index) => renderBodyParagraph(paragraph, index))
+                : <p className="work-entry__body">{item.body}</p>}
               {item.whatItShows && (
                 <div className="work-entry__shows">
                   <span className="work-entry__shows-label">What it shows</span>

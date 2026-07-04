@@ -111,10 +111,18 @@ export const siteContent = {
       },
       {
         category: 'Writing & Research',
-        title: 'Bad Boards',
-        url: 'https://www.BadBoards.org',
-        body: 'A practical field guide on board dysfunction, governance patterns, and the language leaders need when the room gets difficult.',
-        whatItShows: 'Governance pattern recognition, executive judgment, and practical language for high-pressure leadership moments.',
+        title: 'Keri Stokstad Writes',
+        body: [
+          'Keri writes about leadership, memory, service, and the stories people carry. Her current projects include practical nonfiction for nonprofit leaders and heartfelt fiction centered on family, legacy, and love.',
+          [
+            { text: 'Visit Keri Stokstad Writes for current books and projects, including ' },
+            { text: 'Bad Boards', href: 'https://www.badboards.org' },
+            { text: ' and ' },
+            { text: 'Honor Flight', href: 'https://www.keristokstadwrites.com/honor-flight' },
+            { text: '.' },
+          ],
+        ],
+        whatItShows: 'A body of work grounded in service, systems, and story — with practical resources for leaders and fiction that explores memory, belonging, and love.',
       },
       {
         category: 'Civic Media & Field-Building',

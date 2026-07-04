@@ -758,6 +758,18 @@ ul, ol   { list-style: none; }
   max-width: 56ch;
   margin-bottom: 0;
 }
+.work-entry__body + .work-entry__body {
+  margin-top: 1rem;
+}
+.work-entry__body a {
+  color: var(--color-purple);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  transition: color 0.15s;
+}
+.work-entry__body a:hover {
+  color: var(--color-purple-mid);
+}
 
 .work-entry__shows {
   margin-top: 1.5rem;
