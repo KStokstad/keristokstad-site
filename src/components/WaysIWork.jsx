@@ -6,6 +6,11 @@ export default function WaysIWork({ content }) {
           <span className="overline">{content.label}</span>
           <h2 className="section-headline ways-header__headline">{content.headline}</h2>
         </div>
+
+        {content.intro && (
+          <p className="ways-intro">{content.intro}</p>
+        )}
+
         <div className="ways-list">
           {content.items.map(item => (
             <div key={item.num} className="ways-list__item">
@@ -17,6 +22,10 @@ export default function WaysIWork({ content }) {
             </div>
           ))}
         </div>
+
+        {content.note && (
+          <p className="ways-note">{content.note}</p>
+        )}
       </div>
     </section>
   )

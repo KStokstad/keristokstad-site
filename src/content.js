@@ -20,7 +20,7 @@ export const siteContent = {
     ctaSecondary: {
       label: 'Interactive resume',
       href: 'https://claude.ai/public/artifacts/8ea9af11-3372-4ffa-a4d9-3b7ef770194b',
-      caption: 'Built with Claude',
+      title: 'Built with Claude',
     },
   },
 
@@ -107,28 +107,6 @@ export const siteContent = {
     headline: 'Public work. Practical tools. Clearer systems.',
     items: [
       {
-        category: 'Civic Practice & Systems',
-        title: 'Civic Congruence',
-        url: 'https://www.civiccongruence.org',
-        body: 'A civic infrastructure project exploring how communities, networks, and institutions can surface better signal without adding more noise.',
-        whatItShows: 'Civic systems thinking, institutional trust, feedback loops, and public-facing infrastructure.',
-      },
-      {
-        category: 'Writing & Research',
-        title: 'Keri Stokstad Writes',
-        body: [
-          'Keri writes about leadership, memory, service, and the stories people carry. Her current projects include practical nonfiction for nonprofit leaders and heartfelt fiction centered on family, legacy, and love.',
-          [
-            { text: 'Visit Keri Stokstad Writes for current books and projects, including ' },
-            { text: 'Bad Boards', href: 'https://www.badboards.org' },
-            { text: ' and ' },
-            { text: 'Honor Flight', href: 'https://www.keristokstadwrites.com/honor-flight' },
-            { text: '.' },
-          ],
-        ],
-        whatItShows: 'A body of work grounded in service, systems, and story — with practical resources for leaders and fiction that explores memory, belonging, and love.',
-      },
-      {
         category: 'Civic Media & Field-Building',
         title: 'Community Media Voices',
         url: 'http://communitymediavoices.org',
@@ -136,24 +114,28 @@ export const siteContent = {
         whatItShows: 'Sector fluency, historical stewardship, relationship mapping, and the ability to make institutional memory visible and useful.',
       },
       {
-        category: 'Public Tools & Systems',
-        title: 'Orrery Map',
-        url: 'https://orrerymap.com',
-        body: 'An embeddable 3D relationship map for archives, organizations, and living histories — turning connected data into an interactive map people can explore.',
-        whatItShows: 'Product design, relationship mapping, archival UX, and the ability to make complex institutional networks visible and navigable.',
+        category: 'Governance & Leadership',
+        title: 'Bad Boards',
+        url: 'https://www.badboards.org',
+        body: 'A published field guide for nonprofit leaders navigating dysfunctional boards — paired with a public diagnostic that helps executive directors recognize patterns and respond with clarity.',
+        whatItShows: 'Governance expertise made practical: published authority on board dynamics, plus a working tool teams can use today.',
       },
+    ],
+    footer: [
+      { text: 'More projects, writing, and a full interactive record live in my ' },
       {
-        category: 'Advisory Work',
-        title: 'Advisory Engagements',
-        body: 'Strategic planning, operating model design, governance support, facilitation, stakeholder engagement, project leadership, and implementation advisory for organizations navigating complexity.',
-        note: 'Representative work discussed where confidentiality allows.',
+        text: 'interactive resume',
+        href: 'https://claude.ai/public/artifacts/8ea9af11-3372-4ffa-a4d9-3b7ef770194b',
       },
+      { text: ' →' },
     ],
   },
 
   waysIWork: {
     label: 'Engagement',
     headline: 'Ways to work together.',
+    intro:
+      'Strategic planning, operating model design, governance support, facilitation, stakeholder engagement, project leadership, and implementation advisory for organizations navigating complexity.',
     items: [
       {
         num: '01',
@@ -176,6 +158,7 @@ export const siteContent = {
         body: 'Designed and led offsites, planning sessions, and decision-making conversations for senior teams.',
       },
     ],
+    note: 'Representative work discussed where confidentiality allows.',
   },
 
   cta: {

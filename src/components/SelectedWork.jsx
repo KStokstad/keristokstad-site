@@ -55,6 +55,12 @@ export default function SelectedWork({ content }) {
             </article>
           ))}
         </div>
+
+        {content.footer && (
+          <p className="selected-work__footer">
+            {content.footer.map((part, index) => renderBodyPart(part, index))}
+          </p>
+        )}
       </div>
     </section>
   )
