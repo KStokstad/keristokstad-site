@@ -17,7 +17,11 @@ export const siteContent = {
     sub: 'I work with mission-driven organizations navigating governance strain, operational complexity, communication gaps, and moments of transition.',
     credentials: `Former CEO, Executive Director, and Fractional COO — 20+ years leading nonprofit, civic, public media, and community organizations.`,
     ctaPrimary: { label: 'Start a conversation', href: '#contact' },
-    ctaSecondary: { label: 'See selected work', href: '#work' },
+    ctaSecondary: {
+      label: 'Interactive resume',
+      href: 'https://claude.ai/public/artifacts/8ea9af11-3372-4ffa-a4d9-3b7ef770194b',
+      caption: 'Built with Claude',
+    },
   },
 
   about: {

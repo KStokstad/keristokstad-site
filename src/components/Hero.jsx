@@ -116,9 +116,24 @@ export default function Hero({ content }) {
                 {content.ctaPrimary.label}
               </a>
               {content.ctaSecondary && (
-                <a href={content.ctaSecondary.href} className="hero__secondary-link">
-                  {content.ctaSecondary.label}
-                </a>
+                <div>
+                  <a
+                    href={content.ctaSecondary.href}
+                    className="btn btn-outline"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {content.ctaSecondary.label}
+                  </a>
+                  {content.ctaSecondary.caption && (
+                    <p
+                      className="hero__credentials"
+                      style={{ marginTop: '6px', marginBottom: 0 }}
+                    >
+                      {content.ctaSecondary.caption}
+                    </p>
+                  )}
+                </div>
               )}
             </div>
           </div>
