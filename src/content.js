@@ -19,7 +19,7 @@ export const siteContent = {
     ctaPrimary: { label: 'Start a conversation', href: '#contact' },
     ctaSecondary: {
       label: 'Interactive resume',
-      href: 'https://claude.ai/public/artifacts/35e2e46a-7155-4bd0-a805-7f794129074c',
+      href: 'https://claude.ai/public/artifacts/5a7d2ed7-c0d8-4f6f-a590-9e5aceff3fa2',
       title: 'Built with Claude',
     },
   },
@@ -125,7 +125,7 @@ export const siteContent = {
       { text: 'More projects, writing, and a full interactive record live in my ' },
       {
         text: 'interactive resume',
-        href: 'https://claude.ai/public/artifacts/35e2e46a-7155-4bd0-a805-7f794129074c',
+        href: 'https://claude.ai/public/artifacts/5a7d2ed7-c0d8-4f6f-a590-9e5aceff3fa2',
       },
       { text: ' →' },
     ],
