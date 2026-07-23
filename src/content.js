@@ -15,30 +15,30 @@ export const siteContent = {
     eyebrow: 'Senior adviser · governance · operations · implementation',
     headline: `I help leaders move\nimportant work forward\nwhen the structure\nisn’t working.`,
     sub: 'I work with mission-driven organizations navigating governance strain, operational complexity, communication gaps, and moments of transition.',
-    credentials: `Former CEO, Executive Director, and Fractional COO — 20+ years leading nonprofit, civic, public media, and community organizations.`,
+    credentials: `Former CEO, Executive Director, and Fractional COO with more than two decades in nonprofit, civic, public media, and community leadership.`,
     ctaPrimary: { label: 'Start a conversation', href: '#contact' },
     ctaSecondary: {
       label: 'Interactive resume',
-      href: 'https://claude.ai/public/artifacts/94358d4c-b441-4000-9589-ee9eaecf1431',
+      href: 'https://claude.ai/public/artifacts/5f8d1b16-35d2-4aaa-84aa-8cc90e75efe7',
       title: 'Built with Claude',
     },
   },
 
   about: {
     label: 'About Keri',
-    headline: `I’ve spent more than two decades helping mission-driven organizations turn complex work into clear decisions, stronger systems, and forward motion.`,
+    headline: `I’ve spent more than two decades helping mission-driven organizations turn complexity into clear decisions, stronger systems, and forward motion.`,
     body: [
-      `My work sits at the intersection of leadership, governance, communications, operations, and public trust. I've led mission-driven organizations through growth, transition, modernization, board partnership, stakeholder engagement, and complex implementation.`,
-      `I work across nonprofit leadership, public media, civic engagement, and operational implementation, partnering with boards and executive teams to build the practical structures needed to move complex work forward.`,
+      `My work sits at the intersection of leadership, governance, communications, operations, and public trust. I’ve led organizations through growth, transition, modernization, board partnership, stakeholder engagement, and complex implementation.`,
+      `I partner with boards and executive teams across nonprofit leadership, public media, and civic organizations to build the practical structures needed for sound decisions and lasting progress.`,
     ],
     credentials: [
-      'CEO / Executive Director leadership',
+      'CEO and Executive Director leadership',
       'Fractional COO and senior project leadership',
       'Board governance and strategic planning',
       'Operations and organizational modernization',
       'Public media, civic engagement, and nonprofit sectors',
       'Stakeholder partnerships and community participation',
-      '20+ years in practice',
+      'More than 20 years in executive leadership',
     ],
     testimonials: [
       {
@@ -125,7 +125,7 @@ export const siteContent = {
       { text: 'More projects, writing, and a full interactive record live in my ' },
       {
         text: 'interactive resume',
-        href: 'https://claude.ai/public/artifacts/94358d4c-b441-4000-9589-ee9eaecf1431',
+        href: 'https://claude.ai/public/artifacts/5f8d1b16-35d2-4aaa-84aa-8cc90e75efe7',
       },
       { text: ' →' },
     ],
