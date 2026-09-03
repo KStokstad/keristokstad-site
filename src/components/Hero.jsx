@@ -116,8 +116,9 @@ export default function Hero({ content }) {
                 <a
                   href={content.ctaSecondary.href}
                   className="btn btn-primary"
-                  target="_blank"
-                  rel="noreferrer"
+                  {...(/^https?:\/\//.test(content.ctaSecondary.href)
+                    ? { target: '_blank', rel: 'noreferrer' }
+                    : {})}
                   title={content.ctaSecondary.title}
                 >
                   {content.ctaSecondary.label}

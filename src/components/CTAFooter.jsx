@@ -1,6 +1,6 @@
 import ContactForm from './ContactForm.jsx'
 
-export default function CTAFooter({ content, footer, name }) {
+export default function CTAFooter({ content, footer, name, homeHref = '#top' }) {
   return (
     <footer className="cta-footer" id="contact">
       <div className="cta-section">
@@ -17,7 +17,7 @@ export default function CTAFooter({ content, footer, name }) {
       <div className="footer-bar">
         <div className="container">
           <div className="footer-bar__inner">
-            <a href="#top" className="footer-bar__name">{name}</a>
+            <a href={homeHref} className="footer-bar__name">{name}</a>
             <span className="footer-bar__copy">{footer.copyright}</span>
             <nav className="footer-bar__links" aria-label="Footer navigation">
               {footer.links.map(link => (

@@ -11,13 +11,25 @@ function LinkedInIcon() {
   )
 }
 
-export default function Header({ name, nav }) {
+function currentPathname() {
+  return window.location.pathname.replace(/\/+$/, '') || '/'
+}
+
+function resolveHref(href, homePrefix = '') {
+  if (homePrefix && href.startsWith('#')) {
+    return `${homePrefix}${href}`
+  }
+  return href
+}
+
+export default function Header({ name, nav, homePrefix = '' }) {
   const [open, setOpen] = useState(false)
+  const path = currentPathname()
 
   return (
     <header className="header">
       <div className="container header__inner">
-        <a href="#top" className="header__logo">
+        <a href={homePrefix || '#top'} className="header__logo">
           <span className="header__logo-name">{name}</span>
           <span className="header__logo-sep" aria-hidden="true">/</span>
           <span className="header__logo-tag">Consulting</span>
@@ -27,12 +39,18 @@ export default function Header({ name, nav }) {
           <ul className="header__links">
             {nav.links.map(link => (
               <li key={link.label}>
-                <a href={link.href} className="header__link">{link.label}</a>
+                <a
+                  href={resolveHref(link.href, homePrefix)}
+                  className="header__link"
+                  aria-current={link.href === path ? 'page' : undefined}
+                >
+                  {link.label}
+                </a>
               </li>
             ))}
           </ul>
           <div className="header__actions">
-            <a href={nav.cta.href} className="header__cta">
+            <a href={resolveHref(nav.cta.href, homePrefix)} className="header__cta">
               {nav.cta.label}
             </a>
             <a
@@ -62,12 +80,17 @@ export default function Header({ name, nav }) {
       {open && (
         <div className="header__drawer" role="navigation" aria-label="Mobile navigation">
           {nav.links.map(link => (
-            <a key={link.label} href={link.href} onClick={() => setOpen(false)}>
+            <a
+              key={link.label}
+              href={resolveHref(link.href, homePrefix)}
+              aria-current={link.href === path ? 'page' : undefined}
+              onClick={() => setOpen(false)}
+            >
               {link.label}
             </a>
           ))}
           <a
-            href={nav.cta.href}
+            href={resolveHref(nav.cta.href, homePrefix)}
             className="header__cta"
             style={{ alignSelf: 'flex-start', marginTop: '0.25rem' }}
             onClick={() => setOpen(false)}

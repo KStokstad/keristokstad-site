@@ -1,7 +1,12 @@
 function renderBodyPart(part, key) {
   if (part.href) {
+    const external = /^https?:\/\//.test(part.href)
     return (
-      <a key={key} href={part.href} target="_blank" rel="noopener noreferrer">
+      <a
+        key={key}
+        href={part.href}
+        {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+      >
         {part.text}
       </a>
     )
