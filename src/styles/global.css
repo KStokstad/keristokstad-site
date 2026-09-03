@@ -949,7 +949,8 @@ ul, ol   { list-style: none; }
   display: block;
   width: 100%;
   min-height: calc(100dvh - var(--header-h));
-  height: 5600px;
+  height: auto;
+  max-height: none;
   border: 0;
   background: var(--color-bg);
 }
