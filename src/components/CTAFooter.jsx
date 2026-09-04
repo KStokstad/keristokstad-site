@@ -1,18 +1,20 @@
 import ContactForm from './ContactForm.jsx'
 
-export default function CTAFooter({ content, footer, name, homeHref = '#top' }) {
+export default function CTAFooter({ content, footer, name, homeHref = '#top', compact = false }) {
   return (
-    <footer className="cta-footer" id="contact">
-      <div className="cta-section">
-        <div className="container">
-          <div className="cta-section__intro">
-            <span className="cta-section__label">{content.label}</span>
-            <h2 className="cta-section__headline">{content.headline}</h2>
-            <p className="cta-section__body">{content.body}</p>
+    <footer className="cta-footer" id={compact ? undefined : 'contact'}>
+      {!compact && (
+        <div className="cta-section">
+          <div className="container">
+            <div className="cta-section__intro">
+              <span className="cta-section__label">{content.label}</span>
+              <h2 className="cta-section__headline">{content.headline}</h2>
+              <p className="cta-section__body">{content.body}</p>
+            </div>
+            <ContactForm />
           </div>
-          <ContactForm />
         </div>
-      </div>
+      )}
 
       <div className="footer-bar">
         <div className="container">

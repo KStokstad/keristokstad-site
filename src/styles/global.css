@@ -927,13 +927,23 @@ ul, ol   { list-style: none; }
 /* ============================================================
    RESUME
    ============================================================ */
+.resume-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
 .resume {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
   background: var(--color-bg);
 }
 
 .resume__intro {
-  padding-top: var(--section-py);
-  padding-bottom: clamp(1.5rem, 3vw, 2.25rem);
+  padding-top: clamp(1.25rem, 3vw, 2rem);
+  padding-bottom: 1rem;
   max-width: 640px;
 }
 
@@ -942,17 +952,30 @@ ul, ol   { list-style: none; }
 }
 
 .resume__embed {
-  padding-bottom: var(--section-py);
+  flex: 1;
+  display: flex;
+  min-height: 0;
+}
+
+.resume__embed-frame {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
 }
 
 .resume__frame {
   display: block;
   width: 100%;
-  min-height: calc(100dvh - var(--header-h));
-  height: auto;
-  max-height: none;
+  flex: 1;
+  min-height: 32rem;
+  height: 100%;
   border: 0;
   background: var(--color-bg);
+}
+
+.resume-page .cta-footer {
+  flex-shrink: 0;
 }
 
 /* ============================================================

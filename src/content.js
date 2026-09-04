@@ -20,7 +20,7 @@ export const siteContent = {
     ctaPrimary: { label: 'Start a conversation', href: '#contact' },
     ctaSecondary: {
       label: 'Interactive resume',
-      href: 'https://claude.ai/public/artifacts/aa4c6ee2-43af-4c51-b8ef-8fca5cdb1be5',
+      href: 'https://claude.ai/public/artifacts/84c45a2e-de26-48c2-bcac-8ffe7661dcb2',
       title: 'Built with Claude',
     },
   },
@@ -126,7 +126,7 @@ export const siteContent = {
       { text: 'More projects, writing, and a full interactive record live in my ' },
       {
         text: 'interactive resume',
-        href: 'https://claude.ai/public/artifacts/aa4c6ee2-43af-4c51-b8ef-8fca5cdb1be5',
+        href: 'https://claude.ai/public/artifacts/84c45a2e-de26-48c2-bcac-8ffe7661dcb2',
       },
       { text: ' →' },
     ],
@@ -165,7 +165,7 @@ export const siteContent = {
   resume: {
     label: 'Interactive Resume',
     headline: 'A fuller record of work, leadership, and public projects.',
-    embedSrc: 'https://claude.site/public/artifacts/aa4c6ee2-43af-4c51-b8ef-8fca5cdb1be5/embed',
+    embedSrc: 'https://claude.site/public/artifacts/84c45a2e-de26-48c2-bcac-8ffe7661dcb2/embed',
     embedTitle: 'keri_stokstad_interactive.jsx',
   },
 
