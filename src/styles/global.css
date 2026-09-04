@@ -927,49 +927,7 @@ ul, ol   { list-style: none; }
 /* ============================================================
    RESUME
    ============================================================ */
-.resume {
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - var(--header-h));
-  height: calc(100svh - var(--header-h));
-  min-height: 28rem;
-  background: var(--color-bg);
-}
-
-.resume > .container {
-  flex-shrink: 0;
-}
-
-.resume__intro {
-  padding-top: clamp(1.25rem, 3vw, 2rem);
-  padding-bottom: 1rem;
-  max-width: 640px;
-}
-
-.resume__headline {
-  margin-top: 0.125rem;
-}
-
-.resume__embed {
-  flex: 1;
-  display: flex;
-  min-height: 0;
-  padding-bottom: var(--section-py);
-}
-
-.resume__embed-frame {
-  display: flex;
-  flex: 1;
-  width: 100%;
-  min-height: 0;
-}
-
-.resume__frame {
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 0;
-  border: 0;
+.resume-page {
   background: var(--color-bg);
 }
 

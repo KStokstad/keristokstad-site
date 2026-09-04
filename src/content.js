@@ -162,13 +162,6 @@ export const siteContent = {
     note: 'Representative work discussed where confidentiality allows.',
   },
 
-  resume: {
-    label: 'Interactive Resume',
-    headline: 'A fuller record of work, leadership, and public projects.',
-    embedSrc: 'https://claude.site/public/artifacts/84c45a2e-de26-48c2-bcac-8ffe7661dcb2/embed',
-    embedTitle: 'keri_stokstad_interactive.jsx',
-  },
-
   cta: {
     label: 'Work Together',
     headline: 'Have work that needs structure, judgment, and forward motion?',
