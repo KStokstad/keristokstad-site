@@ -31,7 +31,6 @@ export default function Resume() {
               src={page.embedSrc}
               title={page.embedTitle}
               width="100%"
-              height="100%"
               frameBorder="0"
               allow="clipboard-write"
               allowFullScreen
